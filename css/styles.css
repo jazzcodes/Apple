@@ -1,0 +1,181 @@
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-bg:linear-gradient(294.28deg, #C8DCE6 0%, #B6CCDA 100%);
+
+    --color-primary:#ABC6D6;
+
+    --color-secondary:hsl(233, 100%, 69%);
+    --color-headings: hsl(210, 10%, 33%);
+    --color-body-text:hsl(201, 11%, 66%);
+}
+
+/* Typography */
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    background: var(--color-bg);
+}
+
+.white-bg{
+    background:white;
+    height:500px;
+    width:500px;
+}
+
+/* Title */
+
+.title{
+    line-height:1.5;
+    letter-spacing: 0.02rem;
+    max-width:400px;
+}
+
+.title-bold{
+    font-weight:700;
+    font-size:3.2rem;
+    
+}
+
+.title-normal{
+    font-weight:400;
+    font-size: 3.2rem;
+}
+
+@media screen and (min-width:1024px){
+
+    .title{
+
+        max-width:800px;
+    }
+    
+    .title-bold, .title-normal{
+        line-height:1.3;
+        font-size:6.4rem;
+        
+    }
+ 
+}
+
+/* Buttons */
+
+.btn{
+    color:#fff;
+    height:5.8rem;
+    width:15.1rem;
+    border-radius: 10rem;
+    border:3px solid #fff;
+    background:var(--color-bg);
+    font-size:1.8rem;
+    font-weight:500;
+
+}
+
+@media screen and (min-width:1024px){
+      .btn{
+        width:25rem;
+        height:7rem;
+        font-size: 2.4rem;
+      }
+    }
+
+
+/* Grids */
+
+.grid{
+    display: grid;
+}
+
+.grid-1X2{
+    grid-template-columns: 350px auto;
+}
+
+/* watch showcase */
+
+.watch{
+    height: 25rem;
+    width:31.2rem;
+}
+
+.color-indicator{
+    width:3rem;
+    height:15rem;
+    margin-top: 3rem;
+}
+
+.ellipse{
+    width:19.2rem;
+    height:5rem;
+    margin-left:5rem;
+}
+
+@media screen and (min-width:1024px)
+{
+    .watch{
+        height: 40rem;
+        width:45rem;
+    }
+
+    
+    .ellipse{
+        width:30.9rem;
+        height:5rem;
+        margin-left:5rem;
+    }
+
+    .watch-selector .grid-1X2{
+        grid-template-columns: 500px auto;
+    }
+
+    .color-indicator{
+
+        margin-top: 15rem;
+    }
+}
+
+/* Watch List */
+
+.watch-list img{
+    width:13.8rem;
+    height: 9.8rem;
+    margin-right: 3rem;
+}
+
+/* Menu */
+
+.menu{
+    height:100vh;
+    width:26.7rem;
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu ul{
+    list-style: none;
+    padding:0;
+    width:26.7rem;
+    
+   
+}
+
+.menu li{
+
+    
+    font-size:1.8rem;
+    font-weight:500;
+ 
+   
+}
+.menu a{
+    text-decoration: none;
+    color:var(--color-primary);
+    height:6.3rem;
+    width:26.7rem;
+}
