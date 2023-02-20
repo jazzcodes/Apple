@@ -433,6 +433,7 @@ html{
 
   /* main-grid */
 
+ 
 
   .main-section{
 
@@ -453,6 +454,7 @@ html{
 
   .main-section{
     border-radius: 0px 0px 25px 25px;
+   
   }
 
   .apple{
@@ -476,6 +478,7 @@ html{
 
   @media screen and (min-width:1024px)
   {
+
     .grid-main{
         grid-template-columns: 100px 1fr;
     }
