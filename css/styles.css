@@ -74,6 +74,7 @@ html{
     background:var(--color-bg);
     font-size:1.8rem;
     font-weight:500;
+    cursor: pointer;
 
 }
 
@@ -115,11 +116,15 @@ html{
     margin-left:5rem;
 }
 
+.watch-selector{
+    padding:2rem;
+}
+
 @media screen and (min-width:1024px)
 {
     .watch{
         height: 40rem;
-        width:45rem;
+        width:48rem;
     }
 
     
@@ -137,9 +142,16 @@ html{
 
         margin-top: 15rem;
     }
+
+
 }
 
 /* Watch List */
+
+.watch-list{
+    height:3.6rem;
+    padding-left: 4rem;
+}
 
 .watch-list img{
     width:13.8rem;
@@ -210,12 +222,19 @@ html{
     cursor: pointer;
 }
 
+.menu{
+    max-height: 0;
+    opacity:0;
+}
+
 @media screen and (min-width:1024px)
 {
     .menu{
         height:3.6rem;
         width:300px;
-        background:var(--color-bg);
+        background-color: var(--color-bg);
+        max-height: 100vh;
+        opacity: 1;
         
     
       
@@ -284,18 +303,32 @@ html{
         cursor: pointer;
     }
     
+
+
 }
 
 /* Search */
 
 
-.block-search .collapsible--expanded .collapsible__content{
+.section-search .collapsible--expanded .collapsible__content{
+    max-height: 0;
+    opacity: 0;
+}
+.section-search .collapsible--expanded .collapsible__icon{
     max-height: 0;
     opacity: 0;
 }
 
+
+
 @media screen and (min-width:1024px)
 {
+
+    .search-icon-mobile{
+        max-height: 0;
+        opacity: 0;
+    }
+
     .search{
         position: relative;
         width:30rem;
@@ -328,13 +361,22 @@ html{
         cursor: pointer;
     }
 
+    .section-search .collapsible--expanded .collapsible__content{
+        max-height: 100vh;
+        opacity: 1;
+    }
+    .section-search .collapsible--expanded .collapsible__icon{
+        max-height: 100vh;
+        opacity: 1;
+    }
+    
 }
 /* Collapsibles */
 
 
 
 
-.collapsible__icon{
+.search-icon-mobile, .collapsible__icon{
     position: absolute;
     opacity:1;
     top: 30px;
@@ -384,10 +426,9 @@ html{
   }
 
   @media screen and (min-width:1024px){
-    .menu .collapsible--expanded .collapsible__content{
-        max-height: 0;
-        opacity: 0;
-    }
+ 
+
+
   }
 
   /* main-grid */
@@ -396,6 +437,7 @@ html{
   .main-section{
 
     background: var(--color-bg);
+   
   }
   .header{
     display: flex;
@@ -420,7 +462,17 @@ html{
 
 }
 
+.vertical-socials{
+    max-height: 0;
+    opacity: 0;
+}
 
+.horizontal-socials{
+    /* max-height: 100vh;
+    opacity: 1;
+    top: 32rem;
+    left: -3.5rem; */
+}
 
   @media screen and (min-width:1024px)
   {
@@ -441,9 +493,18 @@ html{
         order:-1;
     }
 
-    .socials img{
+    /* .socials img{
         max-height: 0;
         opacity: 0;
+    } */
+
+    .vertical-socials{
+        max-height: 100vh;
+        opacity: 1;
+        position: relative;
+        top: 15rem;
+        left: -3.5rem;
+
     }
 
     .toggler{
@@ -456,6 +517,64 @@ html{
     
     }
     
+    .footer-section .collapsible--expanded .collapsible__content{
+        max-height: 0;
+        opacity: 0;
+    }
 
+    .horizontal-socials{
+        max-height: 0;
+        opacity: 0;
+    }
    
   }
+
+/* Title-Button Section */
+
+.title-button{
+    margin:6rem;
+    
+}
+
+@media screen and (min-width:1024px){
+
+    .title-button{
+        margin-left:3rem;
+    }
+
+    .title-button .btn{
+        margin-top:4rem;
+    }
+}
+
+/* internal-grid */
+
+.arrows{
+    max-height: 0;
+    opacity: 0;
+}
+
+.watch-list{
+    max-height: 0;
+    opacity: 0;
+}
+
+@media screen and (min-width:1024px){
+    .internal-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto 100px;
+    }
+
+    .arrows{
+        margin:4rem;
+        max-height: 100vh;
+        opacity: 1;
+    }
+
+    .watch-list{
+        margin:-2rem;
+        max-height: 100vh;
+        opacity: 1;
+    }
+}
