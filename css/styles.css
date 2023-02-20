@@ -433,11 +433,11 @@ html{
 
   /* main-grid */
 
- 
 
   .main-section{
 
     background: var(--color-bg);
+    width:400px;
    
   }
   .header{
@@ -479,6 +479,10 @@ html{
   @media screen and (min-width:1024px)
   {
 
+    .main-section{
+        width:1250px;
+    }
+
     .grid-main{
         grid-template-columns: 100px 1fr;
     }
@@ -505,7 +509,7 @@ html{
         max-height: 100vh;
         opacity: 1;
         position: relative;
-        top: 15rem;
+        top: 8rem;
         left: -3.5rem;
 
     }
