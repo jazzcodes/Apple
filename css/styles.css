@@ -439,7 +439,7 @@ html{
   .main-section{
 
     background: var(--color-bg);
-    width:400px;
+    
    
   }
   .header{
@@ -482,7 +482,7 @@ html{
   {
 
     .main-section{
-        width:1250px;
+    
     }
 
     .grid-main{
