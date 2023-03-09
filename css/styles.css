@@ -38,6 +38,7 @@ header{
 main{
     border:2px solid black;
     min-width: 320px;
+    height: 100vh;
 }
 
 .hero{
@@ -91,6 +92,7 @@ footer{
     }
 
     main{
-        min-width: 100vw;
+        width: 100vw;
+       
     }
 }
