@@ -29,14 +29,14 @@
 }
 
 .main{
-    height: 815px;
+    /* min-height: 815px; */
 }
 
 .footer{
-    height: 81px;
+    min-height: 81px;
 }
 
-@media screen and (min-width:414px)
+@media screen and (min-width:1024px)
 {
     .site-body{
         flex-direction: row-reverse;
@@ -47,7 +47,7 @@
     }
 
     .main,.footer{
-        height:900px ;
+        /* min-height:900px ; */
     }
 
     .footer{
@@ -128,7 +128,7 @@ header{
 
 
 
-@media screen and (min-width:414px)
+@media screen and (min-width:1024px)
 {
     .hero{
         flex-direction: row;
