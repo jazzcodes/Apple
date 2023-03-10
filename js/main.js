@@ -8,7 +8,7 @@ collapsibles.forEach((item) =>
 // define a function that sets min-height of my-element to window.innerHeight:
 
 const setHeight = () => {
-  document.getElementById("my-element").style.minHeight = window.innerHeight + "px"
+  document.getElementById("page").style.minHeight = window.innerHeight + "px"
 };
 
 // define mobile screen size:
