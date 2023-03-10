@@ -76,7 +76,7 @@ header{
 
 main{
     min-width:320px;
-    
+    min-height: 90%;
     border:3px solid darkblue;
     background-color: lightsalmon;
 }
@@ -100,6 +100,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    min-height:10%;
 }
 
 .footer__item{
