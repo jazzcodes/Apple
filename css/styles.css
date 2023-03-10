@@ -14,10 +14,62 @@
     --color-body-text:hsl(201, 11%, 66%);
 }
 
+html{
+    font-family: 'Poppins', sans-serif; 
+    font-size:62.5%;
+}
+
 body{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+   
+
 }
+
+.title{ 
+    line-height:1.5; 
+    letter-spacing: 0.02rem; 
+    max-width:400px; 
+    color: #fff; 
+} 
+
+.title-bold{ 
+    font-weight:700; 
+    font-size:2.4rem; 
+} 
+
+.title-normal{
+    font-weight:400; 
+    font-size: 2.4rem; 
+}
+
+@media screen and (min-width:1024px){
+    .title{
+         max-width:800px;
+         } 
+    .title-bold, .title-normal{ 
+        line-height:1.3;
+        font-size:6.4rem; } 
+    } 
+    
+    /* Buttons */ 
+    .btn{ 
+        color:#fff; 
+        height:5.8rem;
+        width:15.1rem; 
+        border-radius: 10rem; 
+        border:3px solid #fff;
+        background:var(--color-bg); 
+        font-size:1.8rem; 
+        font-weight:500;
+        cursor:pointer; } 
+        @media screen and (min-width:1024px){ 
+            .btn{ 
+                width:25rem;
+                height:7rem; 
+                font-size: 2.4rem; 
+            } }
 
 header{
     min-width:320px;
@@ -25,7 +77,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:2rem;
+    padding:3rem;
 }
 
 .header__item{
@@ -38,7 +90,10 @@ header{
 main{
     border:2px solid black;
     min-width: 320px;
-    height: 100vh;
+    
+    height: auto;
+    background: var(--color-bg);
+    border-radius: 0px 0px 25px 25px;
 }
 
 .hero{
@@ -78,6 +133,7 @@ footer{
     body{
         flex-direction: row-reverse;
         justify-content: flex-end;
+        
     }
 
     .hero{
@@ -93,6 +149,7 @@ footer{
 
     main{
         width: 100vw;
+        border-radius: 0px 0px 15px 15px;
        
     }
 }
