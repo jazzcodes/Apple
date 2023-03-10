@@ -20,30 +20,6 @@ html{
    
 }
 
-
-/*******/
-*, *::after,*::before{
-    box-sizing: border-box;
-}
-
-:root{
-    --color-bg:linear-gradient(294.28deg, #C8DCE6 0%, #B6CCDA 100%);
-
-    --color-primary:#ABC6D6;
-
-    --color-secondary:#404354;
-
-    --color-accent:#EFF6FB;
-    
-    --color-body-text:hsl(201, 11%, 66%);
-}
-
-html{
-    font-family: 'Poppins', sans-serif; 
-    font-size:62.5%;
-   
-}
-
 .page{
     display: flex;
     border: 3px solid brown;
