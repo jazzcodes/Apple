@@ -51,8 +51,10 @@ html{
 
     min-width: 320px;
     flex-direction: column;
+    justify-content: space-between;
     
 }
+
 
 header{
     min-width:320px;
