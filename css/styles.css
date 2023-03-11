@@ -60,6 +60,7 @@ main{
     min-height: 90%;
     border:3px solid darkblue;
     /* background-color: lightsalmon; */
+    padding:2rem;
     background: var(--color-bg);
 }
 
@@ -72,8 +73,12 @@ main{
 .hero{
     display: flex;
     flex-direction: column;
-    padding:2rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 
 footer{
     min-width: 320px;
@@ -124,26 +129,49 @@ footer{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -9rem;
-    left: -7rem;
+    top: 2rem;
+    left: -2rem;
 }
 
 .watch{
-    transform: scale(0.5);
+    height: 245px;
+    width: 245px;
 }
 
 .color-indicator{
     height: 162px;
     width: 30px;
-    margin-left:-120px;
+   
 }
 
 .ellipse{
     
     position: relative;
-    top: -28rem;
+    top: -3rem;
 }
 
+.main__footer{
+    display: none;
+    opacity: 0;
+}
+
+/* footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+} */
+
+.socials-list-vertical{
+    display: none;
+    opacity: 0;
+}
+
+.socials-list{
+
+    display: initial;
+    opacity: 1;
+}
 
 @media screen and (min-width:583px){
 
@@ -153,6 +181,18 @@ footer{
         min-width:10%;
         
     }
+
+       
+.socials-list-vertical{
+    display: initial;
+    opacity: 1;
+}
+
+.socials-list{
+
+    display: none;
+    opacity: 0;
+}
 
     main{
         min-width: 90%;
@@ -167,13 +207,22 @@ footer{
         font-size: 2.3rem;
         
         max-width:514px;
+        margin-top: 3rem;
       
     }
 
     .btn{
+        margin-top:0.5rem;
         width:170px;
         height: 45px;
     }
+
+    .hero__image{
+        position: relative;
+        top:-2rem;
+    }
+
+
 
 }
 
@@ -208,13 +257,70 @@ footer{
         width:120px;
         height: 45px;
     } */
+
+
 }
 
 
-@media screen and (min-width:1026px)
+@media screen and (min-width:1083px)
 {
 
     .hero{
         flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .watch{
+        height:380px;
+        width: 400px;
+    }
+
+    .ellipse{
+        left: 5rem;
+    }
+
+
+    .main__footer{
+        display: initial;
+        opacity: 1;
+        display: flex;
+        justify-content: space-between;
+        padding:2rem;
+        align-items: center;
+        position: relative;
+        top: -14rem;
+    }
+    
+    .page-indicator{
+        width: 80px;
+        height: 25px;
+    }
+    
+    .watch-images{
+        display: flex;
+        gap:1rem;
+    }
+    
+    
+    .watch-images img{
+        width:100px;
+        height:80px;
+    }
+}
+
+@media screen and (min-width:1250px)
+{
+
+    .title{
+        font-size: 2.7rem;
+        
+        max-width:700px;
+      
+    }
+
+    .btn{
+        margin-top:0.5rem;
+        width:200px;
+        height: 48px;
     }
 }
