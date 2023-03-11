@@ -59,8 +59,7 @@ main{
     min-width:320px;
     min-height: 90%;
     border:3px solid darkblue;
-    /* background-color: lightsalmon; */
-    background: var(--color-bg);
+    background-color: lightsalmon;
 }
 
 .hero__item{
@@ -92,60 +91,7 @@ footer{
 
 }
 
-.title{
-    font-size: 1.3rem;
-    color:#fff;
-    max-width: 310px;
-}
-
-.title-normal{
-    font-weight: normal;
-}
-
-.btn{
-    outline: none;
-    border:0;
-    cursor: pointer;
-    border-radius:2.2rem;
-    font-size: 1.5rem;
-    color: white;
-    
-    background:transparent;
-    padding:1rem;
-    width:120px;
-    height: 40px;
-    border:2px solid #fff;
-    margin-top:2rem;
-}
-
-.watch-combo{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -9rem;
-    left: -7rem;
-}
-
-.watch{
-    transform: scale(0.5);
-}
-
-.color-indicator{
-    height: 162px;
-    width: 30px;
-    margin-left:-120px;
-}
-
-.ellipse{
-    
-    position: relative;
-    top: -28rem;
-}
-
-
-@media screen and (min-width:583px){
+@media screen and (min-width:414px){
 
     footer{
 
@@ -163,58 +109,4 @@ footer{
         justify-content: flex-end;
     }
 
-    .title{
-        font-size: 2.3rem;
-        
-        max-width:514px;
-      
-    }
-
-    .btn{
-        width:170px;
-        height: 45px;
-    }
-
-}
-
-
-@media screen and (min-width:415px) and (max-width:582px)
-{
-
-    footer{
-
-        flex-direction: column;
-        min-width:10%;
-        
-    }
-
-    main{
-        min-width: 90%;
-    }
-
-    .page{
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
-
-
-    .title{
-        font-size: 1.5rem;
-        max-width: 327px;
-       
-    }
-
-    /* .btn{
-        width:120px;
-        height: 45px;
-    } */
-}
-
-
-@media screen and (min-width:1026px)
-{
-
-    .hero{
-        flex-direction: row;
-    }
 }
