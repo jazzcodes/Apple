@@ -20,7 +20,14 @@
 html{
     font-family: 'Poppins', sans-serif; 
     font-size:62.5%;
+    
 
+
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .page{
@@ -241,6 +248,16 @@ footer{
     opacity: 1; } 
 
 
+    .menu-section .collapsible--expanded .collapsible__content
+    { 
+        max-height: 100vh; 
+        opacity: 1;
+ } 
+ 
+   .menu-section .collapsible--expanded .collapsible__icon{ 
+    max-height:100vh; 
+    opacity: 1; } 
+
 
 /* Collapsibles */ 
 
@@ -269,6 +286,7 @@ footer{
     /* position: absolute;
     opacity:1; top: 30px; right: 10px;  */
 } 
+
 
 @media screen and (min-width:583px){
 
