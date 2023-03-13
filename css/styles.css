@@ -35,7 +35,7 @@ html,body{
 
 .page{
     display: flex;
-    border: 3px solid brown;
+    /* border: 3px solid brown; */
     height: 100vh;
     /* height: -webkit-fill-available; */
 
@@ -50,7 +50,7 @@ html,body{
 
 header{
     min-width:320px;
-    border: 3px solid magenta;
+    /* border: 3px solid magenta; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,7 @@ header{
 
 .header__item{
     background-color: pink;
-    border: 2px solid palevioletred;
+    /* border: 2px solid palevioletred; */
     display: inline-block;
     
 }
@@ -70,7 +70,7 @@ main{
     min-width:320px;
    
     min-height: 90%;
-    border:3px solid darkblue;
+    /* border:3px solid darkblue; */
     /* background-color: lightsalmon; */
     padding:2rem;
     background: var(--color-bg);
@@ -78,8 +78,8 @@ main{
 }
 
 .hero__item{
-    background-color: lightskyblue;
-    border: 2px solid darkcyan;
+    /* background-color: lightskyblue; */
+    /* border: 2px solid darkcyan; */
     display: inline-block;
 }
 
@@ -95,7 +95,7 @@ main{
 
 footer{
     min-width: 320px;
-    border:3px solid darkgreen;
+    /* border:3px solid darkgreen; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,8 +168,8 @@ footer{
 
 
 .footer__item{
-    background-color: lightgreen;
-    border: 2px solid green;
+    /* background-color: lightgreen; */
+    /* border: 2px solid green; */
     display: inline-block;
 
 }
@@ -341,7 +341,8 @@ footer{
     align-items: center;
    
     gap:0.1rem;
-    border: 2px solid black; } 
+    /* border: 2px solid black; */
+ } 
     
  .collapsible__content{
     max-height: 0; 
@@ -387,7 +388,7 @@ header.collapsible--expanded .collapsible__icon{
         flex-direction: row;
         gap:4rem;
         justify-content: center;
-        border: 2px solid darkgray;
+        /* border: 2px solid darkgray; */
         position: relative;
         left:-1rem;
     }
