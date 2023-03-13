@@ -6,6 +6,6 @@ collapsibles.forEach((item) =>
 );
 
 (function () {
-  const el = document.getElementsByClassName('page');
+  const el = document.getElementsByClassName("page");
   el.style.height = window.innerHeight + 'px';
 })();
