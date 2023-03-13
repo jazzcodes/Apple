@@ -7,20 +7,20 @@ collapsibles.forEach((item) =>
 
 // define a function that sets min-height of my-element to window.innerHeight:
 
-const setHeight = () => {
-  document.getElementById("page").style.height = window.innerHeight + "px"
-};
+// const setHeight = () => {
+//   document.getElementById("page").style.height = window.innerHeight + "px"
+// };
 
-// define mobile screen size:
+// // define mobile screen size:
 
-let deviceWidth = window.matchMedia("(max-width: 414px)");
+// let deviceWidth = window.matchMedia("(max-width: 414px)");
 
-if (deviceWidth.matches) {
-// set an event listener that detects when innerHeight changes:
+// if (deviceWidth.matches) {
+// // set an event listener that detects when innerHeight changes:
 
-  window.addEventListener("resize", setHeight);
+//   window.addEventListener("resize", setHeight);
 
-// call the function once to set initial height:
+// // call the function once to set initial height:
 
-  setHeight();
-}
+//   setHeight();
+// }
