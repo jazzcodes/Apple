@@ -41,6 +41,7 @@ html,body{
 
 
     min-width: 320px;
+   
     flex-direction: column;
     justify-content: space-between;
     
@@ -100,7 +101,54 @@ footer{
     align-items: center;
     padding: 2rem;
     min-height:10%;
+    flex-wrap: wrap;
+    position: relative;
 }
+
+.nav-vertical{
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:6rem;
+    padding-left: 0;
+    padding-top: 13rem;
+    background-color: #fff;
+    height: 89vh;
+    position: absolute;
+    bottom: 7rem;
+    left: 0rem;
+}
+
+.nav-vertical__item{
+    list-style:none;
+    padding:2rem;
+    padding-left:9rem;
+    padding-right:9rem;
+    
+
+    
+}
+
+.nav-vertical a{
+    text-decoration: none;
+    font-size:2.5rem;
+    color: var(--color-primary);
+}
+
+.nav-vertical a:hover{
+
+    color: var(--color-secondary);
+    
+}
+
+.nav-vertical__item:hover{
+    background-color: var(--color-accent)
+
+}
+
+
 
 .footer__item{
     background-color: lightgreen;
@@ -286,12 +334,21 @@ footer{
     max-height: 100vh; 
     opacity:1; } 
     
-.collapsible--expanded .collapsible__icon{
+header.collapsible--expanded .collapsible__icon{
     clip-path: polygon(44% 0, 100% 0, 100% 100%, 44% 100%);
     /* position: absolute;
     opacity:1; top: 30px; right: 10px;  */
 } 
 
+
+@media screen and (min-width:414px)
+{
+        
+  .nav-vertical{
+    display: none;
+  }
+    
+}
 
 @media screen and (min-width:583px){
 
@@ -366,7 +423,7 @@ footer{
     main{
         /* min-width: 90%; */
         border-radius: 15px 0px 0px 15px;
-        min-width: 95.2%;
+        min-width: 90%;
     }
 
     .page{
@@ -413,12 +470,12 @@ footer{
     footer{
 
         flex-direction: column;
-        min-width:10%;
+        min-width:10rem;
         
     }
 
     main{
-        min-width: 90%;
+        min-width: 82.5%;
     }
 
     .page{
@@ -438,12 +495,32 @@ footer{
         height: 45px;
     } */
 
+           
+.socials-list-vertical{
+    display: initial;
+    opacity: 1;
+}
+
+.socials-list{
+
+    display: none;
+    opacity: 0;
+}
+
+
 
 }
 
 
 @media screen and (min-width:1083px)
 {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
 
     .hero{
         flex-direction: row;
@@ -508,7 +585,7 @@ footer{
     .title{
         font-size: 2.7rem;
         
-        max-width:700px;
+        max-width:600px;
       
     }
 
@@ -516,5 +593,12 @@ footer{
         margin-top:0.5rem;
         width:200px;
         height: 48px;
+    }
+}
+
+@media screen and (min-width:1116px)
+{
+    main{
+        width: 96%;
     }
 }
