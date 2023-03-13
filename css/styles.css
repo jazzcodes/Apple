@@ -131,25 +131,18 @@ footer{
     
 }
 
-#mac{
+#mac, #ipad{
     padding-left:10rem;
     padding-right:10rem;
 }
 
-#iphone{
+#iphone, #support, #iwatch{
     padding-left:9rem;
     padding-right:9rem;
 }
 
-#iwatch{
-    padding-left:9rem;
-    padding-right:9rem;
-}
 
-#support{
-    padding-left:9rem;
-    padding-right:9rem;
-}
+
 
 
 
