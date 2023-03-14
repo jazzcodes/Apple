@@ -664,3 +664,15 @@ header .collapsible--expanded .collapsible__icon{
         width: 96%;
     }
 }
+
+@media screen and (min-width:1500px)
+{
+    .hero{
+        justify-content: space-around;
+    }
+
+    .main__footer{
+        justify-content: space-around;
+        gap: 64rem;
+    }
+}
