@@ -72,7 +72,10 @@ header{
 
 main{
     min-width:320px;
-   
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem; */
     min-height: 90%;
     /* border:3px solid darkblue; */
     /* background-color: lightsalmon; */
@@ -93,6 +96,7 @@ main{
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
+    height: 60%;
 }
 
 
@@ -279,7 +283,10 @@ footer{
 
     .search
     { 
-      width:13rem; 
+      width:13rem;
+      padding: 0;
+      margin: 0;
+      height: 35px;
       display:inline-block; }
 
     .search input{ 
@@ -296,7 +303,7 @@ footer{
         font-weight:400; 
         position: relative;
         left: 4rem;
-        top: 1.2rem;} 
+        top: 0.2rem;} 
         
     input::placeholder{ 
         color:#fff; 
@@ -306,8 +313,8 @@ footer{
     .search-icon{
         clip-path: polygon(0 0, 38% 0, 38% 100%, 0% 100%); 
         position: relative;
-        left: 30rem;
-        top: -10px;
+        left: 13rem;
+        top: -26px;
         cursor: pointer; 
     } 
     
@@ -343,9 +350,9 @@ footer{
     /* margin-right:-5rem; */
     display: flex;
     align-items: center;
-   
+    margin:0;
     gap:0.1rem;
-    /* border: 2px solid black; */
+    border: 2px solid black;
  } 
     
  .collapsible__content{
@@ -356,7 +363,7 @@ footer{
     max-height: 100vh; 
     opacity:1; } 
     
-header.collapsible--expanded .collapsible__icon{
+header .collapsible--expanded .collapsible__icon{
     clip-path: polygon(44% 0, 100% 0, 100% 100%, 44% 100%);
     /* position: absolute;
     opacity:1; top: 30px; right: 10px;  */
@@ -366,10 +373,38 @@ header.collapsible--expanded .collapsible__icon{
 @media screen and (min-width:414px)
 {
         
-  .nav-vertical{
+  /* .nav-vertical{
     display: none;
-  }
+  } */
     
+  .nav-vertical{
+    width: 80%;
+  
+
+}
+
+.nav-vertical__item{
+/*     
+    padding:2rem; */
+    /* padding-left:2rem;
+    padding-right:2rem; */
+    
+
+    
+}
+
+#mac, #ipad{
+    padding-left:4rem;
+    padding-right:4rem;
+}
+
+#iphone, #support, #iwatch{
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+}
+
+
+
 }
 
 @media screen and (min-width:583px){
@@ -599,6 +634,11 @@ header.collapsible--expanded .collapsible__icon{
         height: 3.5rem;
         font-size: 1.4rem; 
 } 
+
+.search-icon{
+    left: 30rem;
+    top:-28px;
+}
 }
 
 @media screen and (min-width:1250px)
